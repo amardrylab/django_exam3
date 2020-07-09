@@ -1,0 +1,92 @@
+{% extends "base.html" %}
+
+{% block content %}
+<form method="POST">
+{% csrf_token %}
+<div class="well">
+<ol>
+	<li>{{ questions.0.statement }}</li>
+	<ol>
+		<li>{{ questions.0.option1 }}
+		<li>{{ questions.0.option2 }}
+		<li>{{ questions.0.option3 }}
+		<li>{{ questions.0.option4 }}
+	</ol>
+	<p> {{ form.user_ans0 }}</p>
+	<li>{{ questions.1.statement }}</li>
+	<ol>
+		<li>{{ questions.1.option1 }}
+		<li>{{ questions.1.option2 }}
+		<li>{{ questions.1.option3 }}
+		<li>{{ questions.1.option4 }}
+	</ol>
+	<p>{{ form.user_ans1 }}</p>
+	<li>{{ questions.2.statement }}</li>
+	<ol>
+		<li>{{ questions.2.option1 }}
+		<li>{{ questions.2.option2 }}
+		<li>{{ questions.2.option3 }}
+		<li>{{ questions.2.option4 }}
+	</ol>
+	<p> {{ form.user_ans2 }}</p>
+	<li>{{ questions.3.statement }}</li>
+	<ol>
+		<li>{{ questions.3.option1 }}
+		<li>{{ questions.3.option2 }}
+		<li>{{ questions.3.option3 }}
+		<li>{{ questions.3.option4 }}
+	</ol>
+	<p> {{ form.user_ans3 }}</p>
+	<li>{{ questions.4.statement }}</li>
+	<ol>
+		<li>{{ questions.4.option1 }}
+		<li>{{ questions.4.option2 }}
+		<li>{{ questions.4.option3 }}
+		<li>{{ questions.4.option4 }}
+	</ol>
+	<p> {{ form.user_ans4 }}</p>
+	<li>{{ questions.5.statement }}</li>
+	<ol>
+		<li>{{ questions.5.option1 }}
+		<li>{{ questions.5.option2 }}
+		<li>{{ questions.5.option3 }}
+		<li>{{ questions.5.option4 }}
+	</ol>
+	<p> {{ form.user_ans5 }}</p>
+	<li>{{ questions.6.statement }}</li>
+	<ol>
+		<li>{{ questions.6.option1 }}
+		<li>{{ questions.6.option2 }}
+		<li>{{ questions.6.option3 }}
+		<li>{{ questions.6.option4 }}
+	</ol>
+	<p> {{ form.user_ans6 }}</p>
+	<li>{{ questions.7.statement }}</li>
+	<ol>
+		<li>{{ questions.7.option1 }}
+		<li>{{ questions.7.option2 }}
+		<li>{{ questions.7.option3 }}
+		<li>{{ questions.7.option4 }}
+	</ol>
+	<p> {{ form.user_ans7 }}</p>
+	<li>{{ questions.8.statement }}</li>
+	<ol>
+		<li>{{ questions.8.option1 }}
+		<li>{{ questions.8.option2 }}
+		<li>{{ questions.8.option3 }}
+		<li>{{ questions.8.option4 }}
+	</ol>
+	<p> {{ form.user_ans8 }}</p>
+	<li>{{ questions.9.statement }}</li>
+	<ol>
+		<li>{{ questions.9.option1 }}
+		<li>{{ questions.9.option2 }}
+		<li>{{ questions.9.option3 }}
+		<li>{{ questions.9.option4 }}
+	</ol>
+	<p> {{ form.user_ans9 }}</p>
+</ol>
+</div>
+<input type="submit" value="submit" class="btn btn-primary btn-lg">
+</form>
+{% endblock %}
